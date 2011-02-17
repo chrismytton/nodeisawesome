@@ -1,5 +1,1 @@
-{ "name": "node.js is webscale"
-, "sections": [
-  {"section":"title"},
-  {"section":"intro"}
-]}
+{ "name": "node.js is webscale", "sections": [ {"section":"nodejs"} ]}
