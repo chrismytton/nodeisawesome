@@ -1,24 +1,67 @@
 !SLIDE bullets incremental
 
-# WTF? #
+# WTF is node.js? #
 
 * "Evented I/O for V8 JavaScript"
 * Concurrent, scalable network programs
-* HTTP is native
+* Speaks HTTP natively
+* Asynchronous, non-blocking by design
 
 !SLIDE
 
-# Problem #
+# Problem? #
 
-!SLIDE
+!SLIDE incremental
 
+    @@@ javascript
     var result = posts.findAll();
+
+
 
     doSomethingElse();
 
-!SLIDE commandline incremental
+!SLIDE
 
-## VROOOOMM!!! ##
+    @@@ javascript
+    var result = posts.findAll();
 
-    $ brew install node
+    // Waiting for results
 
+    doSomethingElse();
+
+!SLIDE
+
+# Solution? Callbacks! #
+
+!SLIDE
+
+    @@@ javascript
+    posts.findAll(function(result) {
+
+    });
+
+
+
+    doSomethingElse();
+
+!SLIDE
+
+    @@@ javascript
+    posts.findAll(function(result) {
+      // Do something with result
+    });
+
+
+
+    doSomethingElse();
+
+!SLIDE
+
+    @@@ javascript
+    posts.findAll(function(result) {
+      // Do something with result
+    });
+
+    // No waiting!
+
+    doSomethingElse();
