@@ -111,3 +111,6 @@
 
     $ node hello.js
     Server running at http://127.0.0.1:8124/
+
+    $ curl http://127.0.0.1:8124/
+    Hello World
