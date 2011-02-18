@@ -1,6 +1,8 @@
-!SLIDE
+!SLIDE center
 
 ## Obligatory hello world example
+
+![Hello world](hello.jpg)
 
 !SLIDE smaller
 
@@ -95,9 +97,11 @@
     @@@ javascript
     console.log('Server running at http://127.0.0.1:8124/');
 
-!SLIDE
+!SLIDE center
 
 # Put it all together
+
+![Assembly line](assembly.jpg)
 
 !SLIDE commandline incremental
 

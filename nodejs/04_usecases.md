@@ -7,9 +7,11 @@
 * Proxy servers
 * Bridging the client/server gap
 
-!SLIDE
+!SLIDE center
 
 # Code please!
+
+![Enigma](code.jpg)
 
 !SLIDE smaller
 
@@ -67,3 +69,13 @@
     webhooks.deliver(options, payload, function(response) {
       console.log("Webhook responded with %s", response);
     });
+
+!SLIDE bullets incremental
+
+# It sounds perfect!
+
+## but beware...
+
+* Quite a low level API
+* Still evolving, changes quite frequently
+* Not good for CPU intensive tasks

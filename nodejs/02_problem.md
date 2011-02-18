@@ -7,9 +7,11 @@
 * Speaks HTTP natively
 * Asynchronous, non-blocking by design
 
-!SLIDE
+!SLIDE center
 
-# Problem? #
+# How is it better than *x*? #
+
+![Error](500.jpeg)
 
 !SLIDE incremental
 
@@ -29,9 +31,11 @@
 
     doSomethingElse();
 
-!SLIDE
+!SLIDE center
 
-# Solution? Callbacks! #
+# The node way! #
+
+![Hovercar](hovercar.jpg)
 
 !SLIDE
 
