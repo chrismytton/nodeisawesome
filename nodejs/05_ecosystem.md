@@ -10,7 +10,7 @@
 * `express` - Sinatra inspired web framework
 * `connect` - Rack inspired middleware
 * `CoffeeScript` - Python/Ruby language
-* `Socket.IO` - Simple WebSockets
+* `query(1)` - Commandline scraping
 
 !SLIDE commandline incremental
 
@@ -27,7 +27,7 @@
 
 !SLIDE
 
-# Express
+# Express/connect
 
     @@@javascript
     var express = require("express");
@@ -42,3 +42,27 @@
     });
 
     app.listen(3000);
+
+!SLIDE
+
+# CoffeeScript
+
+    @@@javascript
+    express = require "express"
+
+    app = express.createServer()
+
+    app.use express.logger()
+
+    app.get "/", (req, res) ->
+      res.send "Hello world"
+
+    app.listen 3000
+
+!SLIDE commandline incremental smaller
+
+# `query(1)`
+
+    $ curl -s twitter.com/hecticjeff | query '#timeline .latest-status .entry-content' text
+    `rake spec && git push && cap deploy` #FTW
+    $
