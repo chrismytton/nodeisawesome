@@ -27,7 +27,7 @@
 
 !SLIDE
 
-# Express/connect
+# express/connect
 
     @@@javascript
     var express = require("express");
@@ -65,4 +65,3 @@
 
     $ curl -s twitter.com/hecticjeff | query '#timeline .latest-status .entry-content' text
     `rake spec && git push && cap deploy` #FTW
-    $
